@@ -415,6 +415,7 @@ public class AddressBook {
      * @return feedback display message for the operation result
      */
     private static String executeAddPerson(String commandArgs) {
+        commandArgs.toUpperCase();
         // try decoding a person from the raw args
         final Optional<String[]> decodeResult = decodePersonFromString(commandArgs);
 
