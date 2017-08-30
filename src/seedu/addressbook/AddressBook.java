@@ -310,7 +310,7 @@ public class AddressBook {
      * A file path is valid if it has a valid parent directory as determined by {@link #hasValidParentDirectory}
      * and a valid file name as determined by {@link #hasValidFileName}.
      */
-    private static boolean isValidFilePath(String filePath) {
+    private static boolean hasValidFilePath(String filePath) {
         if (filePath == null) {
             return false;
         }
@@ -909,7 +909,7 @@ public class AddressBook {
      */
 
     /**
-     * Decodes a person from it's supposed string representation.
+     * Decodes a person from it's supposed string representation .
      *
      * @param encoded string to be decoded
      * @return if cannot decode: empty Optional
